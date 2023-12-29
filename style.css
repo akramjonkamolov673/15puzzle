@@ -1,0 +1,59 @@
+body{
+    background-color:black;
+}
+
+#container{
+    position:absolute;
+    border: 3px solid brown;
+    border-radius:4px;
+    
+    width:calc(11vh * 4);
+    height:calc(11vh * 4);
+    
+    background-color:beige;
+    
+    top:calc((100vh - (11vh * 4))/2 - -30px);
+    left:calc((100vw - (11vh * 4))/2 - 3px);
+}
+.tile{
+    position:absolute;
+    background-color:gray;
+    width:10vh;
+    height:10vh;
+    
+    cursor:pointer;
+    
+    transition: top 0.2s, left 0.2s;
+    -webkit-transition: top 0.2s, left 0.2s;
+    
+    border-radius:3px;
+    
+    text-align:center;
+    line-height:10vh;
+    
+    margin-top:0.5vh;
+    margin-left:0.5vh;
+    
+    font-size: 20px;
+    font-family: courier;
+}
+#msMeter{
+    color:white;
+}
+#msMeter:after{
+    content:'s'
+}
+.correct{
+    background-color:green;
+}
+
+button{
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: black;
+    background-color: white;
+}
+.btn-con{
+    display: flex;
+    justify-content: center;
+}
